@@ -298,7 +298,7 @@ def main():
     df = load_data(city)
     df = apply_filters(month, day, df)
 
-    # Run functions based on user input
+    # This loop will run functions based off of user input, with user input 'esc' ending the loop and the program
     command = ''
     while command != 'esc':
         print('\nType "m" for menu.')
