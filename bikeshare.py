@@ -293,12 +293,14 @@ def main():
 
     """Main Function that runs the program"""
 
+    #This serves as the introduction to the program. included is a greeting and requires user input to filter data
+
     print('Hello! Let\'s explore some US bikeshare data!')
     city, month, day = get_filters()
     df = load_data(city)
     df = apply_filters(month, day, df)
 
-    # This loop will run functions based off of user input, with user input 'esc' ending the loop and the program
+    # This loop will run functions based off of user input, with user input 'esc' ending the loop and the program.
     command = ''
     while command != 'esc':
         print('\nType "m" for menu.')
